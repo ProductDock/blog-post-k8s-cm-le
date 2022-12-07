@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: simple-nginx-ingress
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-acme-staging
+    cert-manager.io/cluster-issuer: letsencrypt-acme-prod
 spec:
   ingressClassName: ingress-traefik
   tls:
