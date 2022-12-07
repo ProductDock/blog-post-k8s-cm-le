@@ -8,10 +8,10 @@ spec:
   ingressClassName: ingress-traefik
   tls:
     - hosts:
-        - library-dev.productdock.rs
+        - library-dev2.productdock.rs
       secretName: tls-secret
   rules:
-    - host: library-dev.productdock.rs
+    - host: library-dev2.productdock.rs
       http:
         paths:
           - path: /simple-nginx
