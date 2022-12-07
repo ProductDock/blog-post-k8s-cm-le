@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: simple-nginx-ingress
 spec:
+  ingressClassName: ingress-traefik
   rules:
     - host: library-dev.productdock.rs
       http:
