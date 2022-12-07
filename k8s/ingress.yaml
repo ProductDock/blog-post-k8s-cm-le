@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: simple-nginx-ingress
+spec:
+  rules:
+    - host: library-dev.productdock.rs
+      http:
+        paths:
+          - path: /simple-nginx
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx
+                port:
+                  name: http
